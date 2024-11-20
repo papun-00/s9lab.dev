@@ -1,0 +1,83 @@
+
+base_url = "https://s9lab.dev"
+
+title = "S9lab.dev"
+description = "Making Technology Affordable and Accessible for Everyone"
+
+default_language = "en"
+author = "S9 Lab"
+preserve_dotfiles_in_output = false
+compile_sass = true
+minify_html = false
+# internal_level = "error"
+# external_level = "error"
+
+# taxonomies = [
+#     {name = "categories", feed = true, paginate_by=5},
+#     {name = "tags", feed = true, paginate_by=5},
+# ]
+
+taxonomies = [{ name = "tags", feed = true, paginate_by = 5 }]
+
+build_search_index = true
+
+
+[markdown]
+
+highlight_code = true
+highlight_theme = "material-dark"
+smart_punctuation = true
+render_footnotes = true
+render_emoji = true
+
+[markdown.extensions]
+heading_attributes = true
+table = true
+tasklist = true
+
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+paths_keep_dates = false
+
+[search]
+
+include_title = true
+include_description = false
+include_path = false
+include_content = true
+index_format = "elasticlunr_javascript"
+
+[extra]
+show_word_count = true
+
+current_year = 2024
+
+my_blog_menu = [
+    { url = "https://s9lab.dev/#", menu = "localhost" },
+    { url = "https://s9lab.dev/apps", menu = "apps" },
+    { url = "https://s9lab.dev/oss", menu = "OpenSource" },
+    { url = "https://s9lab.dev/connect", menu = "Connect" },
+
+]
+
+social_handle = [
+    { url = "https://github.com/s9lab", social_handle = "GitHub" },
+    { url = "https://linkedin.com/in/s9-lab", social_handle = "LinkedIn" },
+    { url = "https://twitter.com/s9lab", social_handle = "X (Twitter)" },
+    { url = "mailto:hi@s9lab.dev", social_handle = "E-Mail" },
+    { url = "https://mastodon.social/@s9lab", social_handle = "Mastodon" },
+
+]
+company_logo = [{ url = "img/brand/s9lab-logo-new.png" }]
+brand_logo = [{ brand_logo_path = "img/brand/ss9lab-logo-new.png" }]
+
+collab = [
+    { url = "https://github.com/s9lab-dev/sharang", name = "Sharang App", Techstack= "Julia, PlotlyDash" },
+    { url = "https://asteria.co.in/skydeck", name = "Skydeck", Techstack= "Go, Python, TailwindCSS" },
+    { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
+    { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
+]
+repo_of_the_day = ["leptos", "helix", "meilisearch"]

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block body %}
+{% set data = load_data(path="content/rust-ml-repo/awsome-rust-ai-ml-repo-list.json", format="json") %}
+{% set sorted_data = data | sort(attribute="forks_count", reverse=true) %}
+<div class="py-5 px-5">
+    <p class="text-5xl font-extrabold text-center py-3">
+        <span class="text-5xl font-extrabold text-fuchsia-900">A</span>wsome Trending Rust ⚙️ Repos
+    </p>
+    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
+</div>
+
+<p class="px-10 mx-10 decoration-indigo-700 py-3 text-2xl font-bold">
+    This Space Showcase The Rust ⚙️ Repos Which >70% Rust codes. This is created for Rust Enthusiasts to have a quick sneakpeak of the repos and comes handy for the team who are hunting for their next Blazzing fast ⚡️ Secure 🔐 App powered by AI Though. Watch this Space for more finetuned Stuff.
+</p>
+<div class="py-5 px-5">
+    <p class="text-3xl font-extrabold py-3">
+        <span class="text-5xl font-extrabold text-fuchsia-900">R</span>epo of the Day 😇
+    </p>
+    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
+</div>
+
+<div class="container flex flex-wrap justify-center">
+    {% for item in data %}
+    {% if item.name in config.extra.repo_of_the_day %}
+    <div class="w-full md:w-1/2 lg:w-1/3 p-4 post-card">
+        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden h-auto">
+            <div class="p-6 ml-5">
+                <div class="flex items-center space-x-3">
+                    <!-- Display the GitHub avatar with a smaller size -->
+                    <img 
+                        src="{{ item.gitHubAvtarURL }}" 
+                        alt="{{ item.name }} Avatar" 
+                        class="w-12 h-12 rounded-full"
+                    >
+                    <!-- Repository name -->
+                    <h2 class="text-lg font-bold text-slate-950 underline">
+                        {{ item.name }}
+                    </h2>
+                </div>
+                <p class="text-base text-slate-950 mt-4 flex-grow overflow-hidden text-ellipsis h-[70px] max-h-[75px] overflow-y-scroll scroll-m-6 scrollbar-thumb-rose-700 scrollbar-track-blue-600">
+                    {{ item.repo_description }}
+                </p>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Rust %:</p>
+                    <p class="text-red-800">{{ item.rustLangPercentage }}</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Last Updated on:</p>
+                    <p class="text-red-800">{{ item.lastUpdated }}</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Forked:</p>
+                    <p class="text-red-800">{{ item.forks_count }} Times</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Open Issues:</p>
+                    <p class="text-red-800">{{ item.open_issues }}</p>
+                </div>
+                
+                <p class="text-fuchsia-900 mt-4 underline space-x-1 font-bold font-mono">
+                    <a href="{{ item.git_url }}" class="hover:underline">
+                        GitHub 👀 →
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+
+<div class="py-5 px-5">
+    <p class="text-3xl font-extrabold py-3">
+        <span class="text-5xl font-extrabold text-fuchsia-900">T</span>op Trending Rust ⚙️ Repos
+    </p>
+    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
+</div>
+
+<div class="container flex flex-wrap justify-center">
+    {% for item in data %}
+    <div class="w-full md:w-1/2 lg:w-1/3 p-4 post-card">
+        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden h-auto">
+            <div class="p-6 ml-5">
+                <div class="flex items-center space-x-3">
+                    <!-- Display the GitHub avatar with a smaller size -->
+                    <img 
+                        src="{{ item.gitHubAvtarURL }}" 
+                        alt="{{ item.name }} Avatar" 
+                        class="w-12 h-12 rounded-full"
+                    >
+                    <!-- Repository name -->
+                    <h2 class="text-lg font-bold text-slate-950 underline">
+                        {{ item.name }}
+                    </h2>
+                </div>
+                <p class="text-base text-slate-950 mt-4 flex-grow overflow-hidden text-ellipsis h-[70px] max-h-[75px] overflow-y-scroll scroll-m-6 scrollbar-thumb-rose-700 scrollbar-track-blue-600">
+                    {{ item.repo_description }}
+                </p>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Rust %:</p>
+                    <p class="text-red-800">{{ item.rustLangPercentage }}</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Last Updated on:</p>
+                    <p class="text-red-800">{{ item.lastUpdated }}</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Forked:</p>
+                    <p class="text-red-800">{{ item.forks_count }} Times</p>
+                </div>
+
+                <div class="flex flex-wrap space-x-1">
+                    <p class="text-violet-950 font-bold">Open Issues:</p>
+                    <p class="text-red-800">{{ item.open_issues }}</p>
+                </div>
+                
+                <p class="text-fuchsia-900 mt-4 underline space-x-1 font-bold font-mono">
+                    <a href="{{ item.git_url }}" class="hover:underline">
+                        GitHub 👀 →
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
