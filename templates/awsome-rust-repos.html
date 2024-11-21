@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
-{% set data = load_data(path="content/rust-ml-repo/awsome-rust-ai-ml-repo-list.json", format="json") %}
+{% set data = load_data(path="content/awsome-rust-repos/awsome-rust-repos-list.json", format="json") %}
 {% set sorted_data = data | sort(attribute="forks_count", reverse=true) %}
 <div class="py-5 px-5">
     <p class="text-5xl font-extrabold text-center py-3">

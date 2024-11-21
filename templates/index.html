@@ -6,8 +6,8 @@
     <div class="container mx-auto flex flex-wrap justify-between items-center py-3">
         <!-- Left side text -->
         <p class="text-fuchsia-600 lg:text-6xl text-2xl md:text-3xl py-auto px-auto px-5">
-            <span class="lg:text-6xl text-20xl font-semibold text-purple-900">Tech </span> <span class="lg:text-6xl text-20xl font-bold text-purple-900"></span> is not 🚀 Science.<br>
-            Just RAG it.<br>
+            <span class="lg:text-6xl text-20xl font-semibold text-purple-900">Tech </span> <span class="lg:text-6xl text-20xl font-bold text-fuchsia-600"> is not 🚀 Science.</span><br>
+            Just <span class="lg:text-6xl text-20xl font-semibold text-purple-900">RAG</span> it.<br>
         </p>
 
 
@@ -34,6 +34,43 @@
         </div>
     </div>
     </div>
+</div>
+
+<div class="ml-10 px-10 py-5">
+    <p class="text-3xl font-extrabold py-3">
+        <span class="text-5xl font-extrabold text-fuchsia-900">A</span>pp Galaxy ☄️
+    </p>
+    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
+</div>
+
+<div class="container p-4 mx-auto">
+    <div class="container flex flex-wrap justify-center">
+        {% set data = load_data(path="apps.json", format="json") %}
+        {% for item in data %}
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 ">
+                    <p class="text-2xl text-purple-700 font-semibold">
+                        <a href="{{ item.url }}">
+                            {{ item.name }}
+                        </a>
+                    </p>
+                    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
+                    <p class="text-base text-slate-950 mt-4">
+                        {{ item.description }}
+                    </p>
+                    <p class="text-fuchsia-900 mt-4">
+                        <a href="{{ item.url}}" class="hover:underline">
+                            Visit App  → 
+                        </a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
 </div>
 
 

@@ -12,12 +12,11 @@ minify_html = false
 # internal_level = "error"
 # external_level = "error"
 
-# taxonomies = [
-#     {name = "categories", feed = true, paginate_by=5},
-#     {name = "tags", feed = true, paginate_by=5},
-# ]
 
-taxonomies = [{ name = "tags", feed = true, paginate_by = 5 }]
+taxonomies = [
+    { name = "tags", feed = true, paginate_by = 5 },
+    {name = "app_url", feed = true, paginate_by=5},
+    ]
 
 build_search_index = true
 

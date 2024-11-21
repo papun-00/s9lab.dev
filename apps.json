@@ -1,0 +1,9 @@
+[
+    { "name":"Awsome RUST Repos",
+    "description":"Collection of the trending Rust that forked most and written purly on Rust ⚙️ Rust >75%",
+    "url":"https://s9lab.dev/awsome-rust-repos/"
+},
+    { "name": "Awsome AI/ML Repos",
+    "description": "Collection of the trending AI ML Projects of Python, Rust, Julia. that forked most","url": "https://s9lab.dev/awsome-ai-ml-repos/"
+    }
+]

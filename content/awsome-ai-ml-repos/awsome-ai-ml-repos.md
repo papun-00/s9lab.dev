@@ -1,7 +1,7 @@
 +++
 title = "Awesome Rust AI/ML Repos"
-path = "rust-ai-ml-repo"
+path = "awsome-ai-ml-repos"
 paginate_by = 5
 sort_by = "date"
-template = "rust-ai-ml-repo.html"
+template = "awsome-ai-ml-repos.html"
 +++
