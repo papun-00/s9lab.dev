@@ -55,10 +55,10 @@ show_word_count = true
 current_year = 2024
 
 my_blog_menu = [
-    { url = "https://s9lab.dev/#", menu = "localhost" },
-    { url = "https://s9lab.dev/apps", menu = "apps" },
-    { url = "https://s9lab.dev/oss", menu = "OpenSource" },
-    { url = "https://s9lab.dev/connect", menu = "Connect" },
+    { url = "https://s9lab.dev/#", menu = "/home" },
+    { url = "https://s9lab.dev/apps", menu = "/apps" },
+    { url = "https://s9lab.dev/oss", menu = "/OpenSource" },
+    { url = "https://s9lab.dev/connect", menu = "/Connect" },
 
 ]
 
@@ -79,4 +79,4 @@ collab = [
     { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
     { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
 ]
-repo_of_the_day = ["leptos", "helix", "meilisearch"]
+repo_of_the_day = ["zed", "starship"]
