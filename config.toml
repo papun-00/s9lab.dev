@@ -79,4 +79,4 @@ collab = [
     { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
     { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
 ]
-repo_of_the_day = ["zed", "starship"]
+repo_of_the_day = ["bevy"]
