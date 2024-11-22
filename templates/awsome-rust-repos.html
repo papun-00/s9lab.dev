@@ -3,36 +3,30 @@
 {% set data = load_data(path="content/awsome-rust-repos/awsome-rust-repos-list.json", format="json") %}
 {% set sorted_data = data | sort(attribute="forks_count", reverse=true) %}
 
-<div class="py-5 px-5">
-    <p class="text-4xl md:text-5xl font-extrabold text-center py-3 px">
+<div class="py-2 px-5">
+    <p class="text-4xl md:text-5xl font-light py-3 px">
         <span class="text-fuchsia-900">A</span>wsome Trending Rust ⚙️ Repos
     </p>
     <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
 </div>
 
-<div class="py-5 px-10">
-    <p class="text-lg md:text-xl lg:text-2xl text-indigo-700 font-bold text-justify mx-auto max-w-auto px-10">
-        🚀 Dive into top Rust ⚙️ repos, sorted by forks and featuring >70% Rust code! Perfect for fans of blazing-fast ⚡, secure 🔐 AI-powered apps.
+<div class="py-1 px-10">
+    <p class="text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-wrap text-centre max-w-auto px-10 mx-10 text-center">
+        🚀 Showcase top Rust ⚙️ repos, sorted by forks and Stars! Updated Twice
     </p>
-    <p class="text-lg md:text-xl lg:text-2xl text-rose-700 font-bold text-justify mt-3 mx-auto max-w-auto px-10">
-        List gets updated 2️⃣ times a day! 📅
-    </p>
-</div>
-
-<div class="py-5 px-10">
-    <p class="text-lg md:text-xl lg:text-2xl text-indigo-700 font-bold text-justify mx-auto max-w-auto px-10">
-        🤔 Can’t find your repo? No worries! Open an issue,  we’ll love Showcase in this space. 
+    <p class="py-1 text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-center mx-auto max-w-auto px-10">
+        Showcase 🖥️ your's Here By Creating an Issue.
     </p>
 </div>
 
-<div class="py-5 px-5 text-center">
-    <p class="text-3xl md:text-4xl font-extrabold py-3">
+<div class="py-2 px-5">
+    <p class="text-3xl md:text-4xl font-light py-3">
         <span class="text-fuchsia-900">R</span>epo of the Day 😇
     </p>
     <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
 </div>
 
-<div class="container mx-5 px-5 flex flex-wrap justify-center gap-5">
+<div class="container mx-5 px-2 flex flex-wrap justify-center gap-5">
     {% for item in data %}
     {% if item.name in config.extra.repo_of_the_day %}
     <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
@@ -40,20 +34,25 @@
             <div class="p-5">
                 <div class="flex items-center space-x-4">
                     <img src="{{ item.gitHubAvtarURL }}" alt="{{ item.name }} Avatar" class="w-12 h-12 rounded-full">
-                    <a href="{{ item.url }}" class="text-lg font-bold text-slate-900 underline hover:text-fuchsia-700">
+                    <a href="{{ item.url }}" class="text-lg font-light text-slate-900 underline hover:text-fuchsia-700">
                         {{ item.name }}
                     </a>
                 </div>
-                <p class="mt-4 text-slate-900 text-sm overflow-hidden h-[75px] max-h-[75px] overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-700 scrollbar-track-blue-600">
+                <p class="mt-4 text-slate-900 text-sm overflow-hidden max-h-[75px] overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-700">
                     {{ item.repo_description }}
                 </p>
                 <div class="my-3 w-full h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg"></div>
 
                 <div class="text-sm">
-                    <p><span class="font-bold text-violet-900">Rust %:</span> <span class="text-red-800">{{ item.rustLangPercentage }}</span></p>
-                    <p><span class="font-bold text-violet-900">Last Updated on:</span> <span class="text-red-800">{{ item.lastUpdated }}</span></p>
-                    <p><span class="font-bold text-violet-900">Forked:</span> <span class="text-red-800">{{ item.forks_count }} Times</span></p>
-                    <p><span class="font-bold text-violet-900">Open Issues:</span> <span class="text-red-800">{{ item.open_issues }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Rust:</span> <span class="text-red-800">{{ item.rustLangPercentage }}%</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">🌟</span> <span class="text-rose-500">{{ item.github_stars }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Last Updated on:</span> <span class="text-red-800">{{ item.lastUpdated }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Forked:</span> <span class="text-red-800">{{ item.forks_count }} Times</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Open Issues:</span> <span class="text-red-800">{{ item.open_issues }}</span></p>
+                </div>
+                <div class="container text-sm flex flex-wrap space-x-5 justify-between bg-gradient-to-r from-cyan-100 via-indigo-100 to-rose-100 backdrop-blur-sm bg-opacity-50 px-2 border-2 border-x-indigo-500 rounded-2xl">
+                    <p class="space-x-1"><span class="font-thin text-violet-900">License:</span> <span class="text-pink-600">{{ item.repo_license }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">SPDX ID:</span> <span class="text-pink-600">{{ item.repo_spdx_id }}</span></p>
                 </div>
 
                 <a href="{{ item.url }}" class="flex items-center text-fuchsia-900 font-semibold mt-4 space-x-2 hover:underline">
@@ -67,34 +66,40 @@
     {% endfor %}
 </div>
 
-<div class="py-5 px-5 text-center">
-    <p class="text-3xl md:text-4xl font-extrabold py-3">
-        <span class="text-fuchsia-900">T</span>op Trending Rust ⚙️ Repos
+<div class="px-5">
+    <p class="text-3xl md:text-4xl font-thin py-3">
+        <span class="text-fuchsia-900">T</span>rending Rust ⚙️ Repos
     </p>
     <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
 </div>
 
 <div class="container mx-auto px-5 flex flex-wrap justify-evenly">
     {% for item in data %}
+    {% if item.name not in config.extra.repo_of_the_day %}
     <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div class="bg-gradient-to-r from-cyan-50 via-indigo-50 to-rose-50 bg-opacity-50 rounded-lg shadow-lg overflow-hidden h-auto">
             <div class="p-5">
                 <div class="flex items-center space-x-4">
                     <img src="{{ item.gitHubAvtarURL }}" alt="{{ item.name }} Avatar" class="w-12 h-12 rounded-full">
-                    <a href="{{ item.url }}" class="text-lg font-bold text-slate-900 underline hover:text-fuchsia-700">
+                    <a href="{{ item.url }}" class="text-lg font-thin text-slate-900 underline hover:text-fuchsia-700">
                         {{ item.name }}
                     </a>
                 </div>
-                <p class="mt-4 text-slate-900 text-sm overflow-hidden h-[75px] max-h-[75px] overflow-y-scroll scrollbar-thin scrollbar-thumb-rose-700 scrollbar-track-blue-600">
+                <p class="mt-4 text-slate-900 text-sm overflow-hidden max-h-[75px] overflow-y-scroll scrollbar-thin">
                     {{ item.repo_description }}
                 </p>
                 <div class="my-3 w-full h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg"></div>
 
                 <div class="text-sm">
-                    <p><span class="font-bold text-violet-900">Rust %:</span> <span class="text-red-800">{{ item.rustLangPercentage }}</span></p>
-                    <p><span class="font-bold text-violet-900">Last Updated on:</span> <span class="text-red-800">{{ item.lastUpdated }}</span></p>
-                    <p><span class="font-bold text-violet-900">Forked:</span> <span class="text-red-800">{{ item.forks_count }} Times</span></p>
-                    <p><span class="font-bold text-violet-900">Open Issues:</span> <span class="text-red-800">{{ item.open_issues }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Rust:</span> <span class="text-red-800">{{ item.rustLangPercentage }}%</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">🌟</span> <span class="text-rose-500">{{ item.github_stars }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Last Updated on:</span> <span class="text-red-800">{{ item.lastUpdated }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Forked:</span> <span class="text-red-800">{{ item.forks_count }} Times</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Open Issues:</span> <span class="text-red-800">{{ item.open_issues }}</span></p>
+                </div>
+                <div class="container text-sm flex flex-wrap space-x-5 justify-between bg-gradient-to-r from-cyan-100 via-indigo-100 to-rose-100 backdrop-blur-sm bg-opacity-50 px-2 border-2 border-x-indigo-500 rounded-2xl">
+                    <p class="space-x-1"><span class="font-thin text-violet-900">License:</span> <span class="text-pink-600">{{ item.repo_license }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">SPDX ID:</span> <span class="text-pink-600">{{ item.repo_spdx_id }}</span></p>
                 </div>
 
                 <a href="{{ item.url }}" class="flex items-center text-fuchsia-900 font-semibold mt-4 space-x-2 hover:underline">
@@ -104,6 +109,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
     {% endfor %}
 </div>
 

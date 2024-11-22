@@ -54,7 +54,7 @@ show_word_count = true
 
 current_year = 2024
 
-my_blog_menu = [
+website_header_menu = [
     { url = "https://s9lab.dev/#", menu = "/home" },
     { url = "https://s9lab.dev/apps", menu = "/apps" },
     { url = "https://s9lab.dev/oss", menu = "/OpenSource" },
