@@ -1,0 +1,277 @@
+[{
+    "name": "Replicate",
+    "description": "Platform for running and sharing machine learning models",
+    "url": "https://replicate.com/",
+    "useCase": "API provider"
+},
+{
+    "name": "Modal",
+    "description": "Cloud platform for running and scaling machine learning workloads",
+    "url": "https://modal.com/",
+    "useCase": "Serverless GPU"
+},
+  {
+      "name": "Hugging Face Inference API",
+      "description": "Managed API for deploying and running machine learning models",
+      "url": "https://huggingface.co/inference-api",
+      "useCase": "API provider"
+  },
+{
+    "name": "Runpod",
+    "description": "GPU cloud platform for machine learning and AI workloads",
+    "url": "https://runpod.io/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Databricks",
+    "description": "Unified data analytics platform with machine learning capabilities",
+    "url": "https://www.databricks.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Vertex AI",
+    "description": "Google Cloud's unified platform for building, deploying, and scaling ML models",
+    "url": "https://cloud.google.com/vertex-ai",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Paperspace Gradient",
+    "description": "Cloud platform specializing in machine learning and AI infrastructure",
+    "url": "https://www.paperspace.com/gradient",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Lambda Labs",
+    "description": "High-performance GPU cloud computing platform for AI and machine learning",
+    "url": "https://lambdalabs.com/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "CoreWeave",
+    "description": "Cloud infrastructure optimized for GPU-accelerated workloads",
+    "url": "https://www.coreweave.com/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Vast.ai",
+    "description": "Decentralized GPU marketplace for machine learning and computational tasks",
+    "url": "https://vast.ai/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Gradient AI",
+    "description": "AI infrastructure platform with flexible GPU computing solutions",
+    "url": "https://www.gradient.ai/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "IBM Cloud",
+    "description": "Enterprise cloud platform with machine learning and AI services",
+    "url": "https://www.ibm.com/cloud",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Spell",
+    "description": "Machine learning infrastructure platform for model training and deployment",
+    "url": "https://spell.ml/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Baseten",
+    "description": "ML inference platform for deploying and serving models",
+    "url": "https://www.baseten.co/",
+    "useCase": "API provider"
+},
+{
+    "name": "Cerebrium",
+    "description": "AI deployment platform with simplified model serving",
+    "url": "https://www.cerebrium.ai/",
+    "useCase": "API provider"
+},
+{
+    "name": "Golem Network",
+    "description": "Decentralized marketplace for computational resources",
+    "url": "https://www.golem.network/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Kaggle Notebooks",
+    "description": "Cloud-based Jupyter notebooks with free GPU access",
+    "url": "https://www.kaggle.com/notebooks",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "OctoML",
+    "description": "Machine learning model deployment and optimization platform",
+    "url": "https://octoml.ai/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Flyte",
+    "description": "Scalable and flexible workflow automation platform for ML",
+    "url": "https://flyte.org/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Argo Workflows",
+    "description": "Open-source container-native workflow engine for orchestrating parallel jobs",
+    "url": "https://argoproj.github.io/argo-workflows/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Anyscale",
+    "description": "Ray-based distributed computing platform for machine learning",
+    "url": "https://www.anyscale.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Saturn Cloud",
+    "description": "Hosted Jupyter notebooks with easy GPU and distributed computing",
+    "url": "https://saturncloud.io/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "MyScale",
+    "description": "AI-native database with GPU-accelerated vector search",
+    "url": "https://myscale.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Runhouse",
+    "description": "Serverless GPU and distributed computing platform",
+    "url": "https://runhouse.ai/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "MosaicML",
+    "description": "Enterprise AI platform for training and deploying large models",
+    "url": "https://www.mosaicml.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Beam",
+    "description": "Serverless ML platform for deploying and scaling models",
+    "url": "https://www.beam.cloud/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Together AI",
+    "description": "Cloud platform for distributed AI computing",
+    "url": "https://www.together.ai/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Basilica",
+    "description": "AI infrastructure platform for model deployment",
+    "url": "https://www.basilica.ai/",
+    "useCase": "API provider"
+},
+{
+    "name": "Brev.dev",
+    "description": "Developer platform for deploying and managing ML workloads",
+    "url": "https://brev.dev/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Domino Data Lab",
+    "description": "Enterprise data science platform for model development and deployment",
+    "url": "https://www.dominodatalab.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Determined AI",
+    "description": "Machine learning training platform with automated hyperparameter tuning",
+    "url": "https://www.determined.ai/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Cloud TPU",
+    "description": "Google's tensor processing unit cloud service for machine learning",
+    "url": "https://cloud.google.com/tpu",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Gradient Flow",
+    "description": "ML infrastructure platform for model serving and scaling",
+    "url": "https://www.gradientflow.com/",
+    "useCase": "API provider"
+},
+{
+    "name": "Cerebras",
+    "description": "AI computing system with massive-scale AI acceleration",
+    "url": "https://www.cerebras.net/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Graphcore",
+    "description": "Intelligence processing unit (IPU) platform for AI workloads",
+    "url": "https://www.graphcore.ai/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Paperspace",
+    "description": "Cloud GPU platform for machine learning and AI development",
+    "url": "https://www.paperspace.com/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Nimble",
+    "description": "AI infrastructure platform for model deployment and scaling",
+    "url": "https://www.nimblehpc.com/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Lightning AI",
+    "description": "Open-source framework for scalable AI research and production",
+    "url": "https://lightning.ai/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Clarifai",
+    "description": "AI platform for building and deploying machine learning models",
+    "url": "https://www.clarifai.com/",
+    "useCase": "API provider"
+},
+{
+    "name": "Grid.ai",
+    "description": "AI infrastructure platform for distributed training and deployment",
+    "url": "https://www.grid.ai/",
+    "useCase": "Serverless GPU"
+},
+{
+    "name": "Kubernetes Engine",
+    "description": "Container orchestration platform for scalable ML deployments",
+    "url": "https://cloud.google.com/kubernetes-engine",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Oracle Cloud Infrastructure",
+    "description": "Cloud platform with high-performance computing for AI workloads",
+    "url": "https://www.oracle.com/cloud/",
+    "useCase": "Scalable infra on k8s"
+},
+{
+    "name": "Qarnot Computing",
+    "description": "Distributed computing platform for intensive computational tasks",
+    "url": "https://www.qarnot.com/",
+    "useCase": "Serverless GPU"
+},
+  {
+      "name": "Google Cloud AI Platform",
+      "description": "Cloud-based machine learning platform with GPU support for model deployment",
+      "url": "https://cloud.google.com/ai-platform",
+      "useCase": "Scalable infra on k8s"
+  },
+  {
+      "name": "AWS SageMaker",
+      "description": "Fully managed machine learning platform for building, training, and deploying models",
+      "url": "https://aws.amazon.com/sagemaker/",
+      "useCase": "Scalable infra on k8s"
+  },
+  {
+      "name": "Azure Machine Learning",
+      "description": "Cloud service for accelerating and managing machine learning projects",
+      "url": "https://azure.microsoft.com/en-us/services/machine-learning/",
+      "useCase": "Serverless GPU"
+  }
+]

@@ -20,6 +20,16 @@
       "spdxId": "Proprietary"
     },
     {
+        "name": "Any Scale",
+        "description": "Framework for scalable AI applications",
+        "url": "https://www.anyscale.com/",
+        "useCase": "Scalable AI, application development",
+        "type": "premium",
+        "huggingFaceUrl": "https://huggingface.co/models",
+        "license": "Apache License 2.0",
+        "spdxId": "Apache-2.0"
+      },
+    {
       "name": "Perplexity",
       "description": "AI-powered search and information platform",
       "url": "https://www.perplexity.ai",
@@ -39,6 +49,16 @@
       "license": "Proprietary",
       "spdxId": "Proprietary"
     },
+    {
+        "name": "together.ai",
+        "description": "Train, fine-tune-and run inference on AI models blazing fast, at low cost, and at production scale",
+        "url": "https://www.together.ai/",
+        "useCase": "Deploy LLM as Api",
+        "type": "premium",
+        "huggingFaceUrl": "https://huggingface.co/models",
+        "license": "Proprietary",
+        "spdxId": "Proprietary"
+      },
     {
       "name": "Gemini",
       "description": "AI-based apps and tools by Google",
@@ -218,15 +238,5 @@
       "huggingFaceUrl": "https://huggingface.co/models",
       "license": "Proprietary",
       "spdxId": "Proprietary"
-    },
-    {
-      "name": "Any Scale",
-      "description": "Framework for scalable AI applications",
-      "url": "https://www.anyscale.com/",
-      "useCase": "Scalable AI, application development",
-      "type": "premium",
-      "huggingFaceUrl": "https://huggingface.co/models",
-      "license": "Apache License 2.0",
-      "spdxId": "Apache-2.0"
     }
   ]  

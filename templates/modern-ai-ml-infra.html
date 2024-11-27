@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block body %}
+{% set data = load_data(path="content/modern-ml-infra/modern-ai-ml-infra.json", format="json") %}
+
+<div class="py-2 px-5">
+    <p class="text-4xl md:text-5xl font-light py-5 px-5 text-center">
+        <span class="text-fuchsia-900">The</span> Modern infrastructure for your <span class="text-pink-600">AI/ML</span><span class="text-fuchsia-900"> Models.</span>
+    </p> 
+
+</div>
+<div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
+
+<div class="py-1 px-10">
+    <p class="py-1 text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-center mx-auto max-w-auto px-10">
+        Let's Know us Your Favorite one 🚀.
+    </p>
+</div>
+<div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
+
+<div class="container mx-auto px-5 flex flex-wrap justify-evenly">
+    {% for item in data %}
+    <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-gradient-to-r from-cyan-50 via-indigo-50 to-rose-50 bg-opacity-50 rounded-lg shadow-lg overflow-hidden h-auto">
+            <div class="p-5">
+                <div class="flex items-center space-x-4">
+                    <a href="{{ item.url }}" class="text-lg font-thin text-slate-900 underline hover:text-fuchsia-700">
+                        {{ item.name }}
+                    </a>
+                    <span>→</span>
+                </div>
+                <p class="mt-4 text-slate-900 text-sm overflow-hidden max-h-[75px] overflow-y-scroll scrollbar-thin">
+                    {{ item.description }}
+                </p>
+                <div class="my-3 w-full h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg"></div>
+
+                <div class="text-sm">
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Use Case:</span> <span class="text-red-800">{{ item.useCase }}</span>.</p>
+                </div>
+
+                <a href="{{ item.url }}" class="flex items-center text-fuchsia-900 font-semibold mt-4 space-x-2 hover:underline">
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
