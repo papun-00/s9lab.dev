@@ -1,0 +1,232 @@
+[
+    {
+      "name": "Anthropic",
+      "description": "AI research and safety-focused solutions",
+      "url": "https://www.anthropic.com/api",
+      "useCase": "AI research, AI safety",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Groq",
+      "description": "AI hardware and software solutions",
+      "url": "https://groq.com/",
+      "useCase": "AI hardware, software development",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Perplexity",
+      "description": "AI-powered search and information platform",
+      "url": "https://www.perplexity.ai",
+      "useCase": "AI-driven search, knowledge discovery",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Chat GPT",
+      "description": "Conversational AI for diverse applications",
+      "url": "https://chatgpt.com/",
+      "useCase": "Chatbot, conversational AI",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Gemini",
+      "description": "AI-based apps and tools by Google",
+      "url": "https://gemini.google.com/app",
+      "useCase": "Generative AI, applications",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Lang Chain",
+      "description": "Framework for building applications with LLMs",
+      "url": "https://www.langchain.com/",
+      "useCase": "Application development, LLM integration",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "MIT License",
+      "spdxId": "MIT"
+    },
+    {
+      "name": "Cohere",
+      "description": "NLP tools and APIs for text processing",
+      "url": "https://cohere.com/",
+      "useCase": "Natural language processing",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Hugging Face",
+      "description": "Open-source AI models and datasets",
+      "url": "https://huggingface.co/",
+      "useCase": "AI model sharing, development",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Apache License 2.0",
+      "spdxId": "Apache-2.0"
+    },
+    {
+      "name": "Replicate",
+      "description": "Platform for hosting machine learning models",
+      "url": "https://replicate.com/home",
+      "useCase": "ML model hosting",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Gradio",
+      "description": "UI library for ML models and demos",
+      "url": "https://www.gradio.app/",
+      "useCase": "Model UI development",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Apache License 2.0",
+      "spdxId": "Apache-2.0"
+    },
+    {
+      "name": "Run Ai",
+      "description": "AI infrastructure for running models",
+      "url": "https://www.run.ai/",
+      "useCase": "AI model deployment, infrastructure",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Banana.dev",
+      "description": "Serverless GPU hosting platform",
+      "url": "https://www.banana.dev",
+      "useCase": "GPU hosting",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Runway",
+      "description": "Generative AI tools for creators",
+      "url": "https://runwayml.com",
+      "useCase": "Generative AI, creative tools",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Modal",
+      "description": "Cloud-native development platform",
+      "url": "https://modal.com/",
+      "useCase": "Cloud development",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Cortex",
+      "description": "Open-source platform for deploying ML models",
+      "url": "https://www.cortex.dev/",
+      "useCase": "ML model deployment",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Apache License 2.0",
+      "spdxId": "Apache-2.0"
+    },
+    {
+      "name": "Paperspace",
+      "description": "Cloud computing for AI and ML",
+      "url": "https://www.paperspace.com/artificial-intelligence",
+      "useCase": "Cloud AI/ML development",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Space ML",
+      "description": "Open-source tools for machine learning in space",
+      "url": "https://spaceml.org/",
+      "useCase": "ML for space applications",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "MIT License",
+      "spdxId": "MIT"
+    },
+    {
+      "name": "Stability AI",
+      "description": "Generative AI tools and models",
+      "url": "https://stability.ai/",
+      "useCase": "Generative AI",
+      "type": "free",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "spdxId": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "FAL AI",
+      "description": "Video analytics with AI",
+      "url": "https://fal.ai/",
+      "useCase": "Video analytics, AI tools",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Mystic AI",
+      "description": "Advanced AI solutions for businesses",
+      "url": "https://www.mystic.ai/",
+      "useCase": "AI solutions, enterprise AI",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Deep Infra",
+      "description": "AI infrastructure for scalable deployments",
+      "url": "https://deepinfra.com/",
+      "useCase": "AI infrastructure",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Hyperbolic",
+      "description": "AI-powered productivity tools",
+      "url": "https://hyperbolic.xyz/",
+      "useCase": "AI productivity",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Proprietary",
+      "spdxId": "Proprietary"
+    },
+    {
+      "name": "Any Scale",
+      "description": "Framework for scalable AI applications",
+      "url": "https://www.anyscale.com/",
+      "useCase": "Scalable AI, application development",
+      "type": "premium",
+      "huggingFaceUrl": "https://huggingface.co/models",
+      "license": "Apache License 2.0",
+      "spdxId": "Apache-2.0"
+    }
+  ]  

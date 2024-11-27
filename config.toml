@@ -80,3 +80,4 @@ collab = [
     { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
 ]
 repo_of_the_day = ["zola"]
+repo_of_rust_ai_ml_of_the_day = ["zola"]
