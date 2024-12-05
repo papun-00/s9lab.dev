@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://s9lab.dev/awsome-rust-repos/
+    about: Checkout Rust of the Day.
+  - name: Creators
+    url: https://samirparhi.com/about
+    about: About the Creator.
