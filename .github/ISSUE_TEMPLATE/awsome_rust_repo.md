@@ -4,7 +4,7 @@ description: "Request for adding your missing Rust repo."
 title: "[Awesome Rust Repos] "
 labels: ["rust-repo-add"]
 assignees: ["samirparhi-dev"]
-
+---
 body:
   - type: markdown
       attributes:
