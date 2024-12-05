@@ -1,3 +1,4 @@
+---
 name: "Awesome Rust Repo"
 description: "Request for adding your missing Rust repo."
 title: "[Awesome Rust Repos] "
@@ -68,3 +69,4 @@ body:
           - "Others"
       validations:
       required: true
+---
