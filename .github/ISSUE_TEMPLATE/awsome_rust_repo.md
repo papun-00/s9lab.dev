@@ -5,25 +5,68 @@ title: "[Awsome Rust Repos] "
 labels: repo-add
 assignees: 'samirparhi-dev'
 ---
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request for your Favorite Repo 🧪
 
-**name**
-Please provide shortname of the Repo (Example: rust)
+  - type: input
+    id: name 🖋️
+    attributes:
+      label: "name"
+      placeholder: "Please provide shortname of the Repo (Example: rust)"
+    validations:
+      required: true
 
-**repo_description**
-Description of the Repo (Example: Empowering everyone to build reliable and efficient software.):
+  - type: textarea
+    id: repo_description ⿳
+    attributes:
+      label: "repo_description"
+      description: "Description of the Repo "
+      placeholder: "(Example: Empowering everyone to build reliable and efficient software.)"
+    validations:
+      required: true
 
-**url**
-URL of the tool if has a website else give git URL ( Example: https://github.com/rust-lang/rust)
+  - type: input
+    id: git_url
+    attributes:
+      label: "git_url"
+      description: "git URL for the repo"🌎
+      placeholder: "example:git://github.com/rust-lang/rust.git "
+    validations:
+      required: true
 
-**use_case**
-Why is this Repo Used for? (Example : Ai, ML, System Programing)
+  - type: input
+    id: repo_license
+    attributes:
+      label: "repo_license"
+      description: "License info of the Repo📄"
+      placeholder: "Example: "Apache", MIT"
+    validations:
+      required: true
 
-**git_url**
-git URL for the repo (example:git://github.com/rust-lang/rust.git ).
+  - type: input
+    id: url
+    attributes:
+      label: "url"
+      description: "URL of the tool if has a website else provide git URL🤗"
+      placeholder: "Example: https://github.com/rust-lang/rust"
+    validations:
+      required: true
 
-**repo_license**
-License info of the Repo: (Example: "Apache", MIT)
-
-**Additional context**
-Add any other context about this repo you want to let us know.
+  - type: dropdown
+    id: use_case
+    attributes:
+      description: "Why is this Repo Used for 🪄"
+      placeholder: "Example : Ai, ML, System Programing"
+      label: "use_case"
+      options:
+        - AI/ML
+        - System Programing
+        - Crypto/ Decentralization
+        - Gaming/Entertainment
+        - Others
+    validations:
+      required: true
 
