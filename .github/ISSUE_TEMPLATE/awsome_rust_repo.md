@@ -1,4 +1,3 @@
----
 name: Awsome Rust Repo
 about: Request for Adding adding your Missing Repo
 title: "[Awsome Rust Repos] "
@@ -9,7 +8,6 @@ body:
     attributes:
       value: |
         Request for your Favorite Repo 🧪
-
   - type: input
     id: name 🖋️
     attributes:
@@ -17,7 +15,6 @@ body:
       placeholder: "Please provide shortname of the Repo (Example: rust)"
     validations:
       required: true
-
   - type: textarea
     id: repo_description ⿳
     attributes:
@@ -26,7 +23,6 @@ body:
       placeholder: "(Example: Empowering everyone to build reliable and efficient software.)"
     validations:
       required: true
-
   - type: input
     id: git_url
     attributes:
@@ -35,7 +31,6 @@ body:
       placeholder: "example:git://github.com/rust-lang/rust.git "
     validations:
       required: true
-
   - type: input
     id: repo_license
     attributes:
@@ -44,7 +39,6 @@ body:
       placeholder: "Example: "Apache", MIT"
     validations:
       required: true
-
   - type: input
     id: url
     attributes:
@@ -53,7 +47,6 @@ body:
       placeholder: "Example: https://github.com/rust-lang/rust"
     validations:
       required: true
-
   - type: dropdown
     id: use_case
     attributes:
