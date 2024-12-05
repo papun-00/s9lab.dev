@@ -4,7 +4,6 @@ about: Request for Adding adding your Missing Repo
 title: "[Awsome Rust Repos] "
 labels: repo-add
 assignees: 'samirparhi-dev'
----
 body:
   - type: markdown
     attributes:
