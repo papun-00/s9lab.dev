@@ -1,164 +1,71 @@
-name: New TAVOSS Tracking Request
-description: Request Be-Secure to track new /existing open source project/version
-title: "TAVOSS-TR:<Enter the name of the project here>"
-labels: [Untracked, triage]
-  
+name: "Awesome Rust Repo"
+description: "Request for adding your missing Rust repo."
+title: "[Awesome Rust Repos] "
+labels: ["rust-repo-add"]
+assignees: ["samirparhi-dev"]
+
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reaching out to us. Please fill out the below details. 
-        Please make sure that the title of the project is in the format - TAVOSS-TR:[name of the project].
-        Eg:- TAVOSS-TR:Sawtooth
-      
-  
-  - type: input
-    id: version
-    attributes:
-      label: Version of the project
-      placeholder: Enter the version of the project
-    validations:
-      required: true
-      
-  - type: dropdown
-    id: tech_stack
-    attributes:
-      label: Tech Stack
-      description: Select the Tech Stack. [Learn more](https://be-secure.github.io/Be-Secure/tech_stack.html)
-      options:
-        - DevOps [DO]
-        - Language and Framwork [L&F]
-        - Application [A]
-        - Distributed and Decentralized Application [DA]
-        - Open-source Security Tool [S]
-    validations:
-      required: true
 
-  - type: textarea
-    id: details
+- type: markdown
     attributes:
-      label: Project details
-      description: Enter details about the project.
-      placeholder: |
-        Tell us about
-        1. What the project is 
-        2. What does it do
-        3. Key features
-    validations:
-      required: true
-      
-  - type: input
-    id: lang
-    attributes:
-      label: Languages used
-      placeholder: Enter the languages used.
-    validations:
-      required: true
+    value: |
+        ### Request for your Favorite Repo 🧪
+        Please fill out the following details to add your favorite Rust repository.
 
-  - type: dropdown
-    id: domain
+- type: input
+    id: name
     attributes:
-      label: Domain
-      description: Specify the domain the project belongs to. [Learn more](../../references.md)
-      options:
-        - Security
-        - Technology
-        - Both
-  
-  - type: dropdown
-    id: industry
-    attributes:
-      label: Industry
-      options:
-        - Banking & Financial Institutions
-        - Healthcare & Life Scienses
-        - Consumer 
-        - Retail
-        - Agritech
-        - Education
-        - Non Profit & Govt
-        - Energy & Utilities
-        - All
-        - Automotive
-        - Telecom
-        - Cybersecurity
+    label: "Name"
+    placeholder: "Please provide the short name of the repo (Example: rust)"
     validations:
-      required: true
-  
-  - type: dropdown
-    id: com
-    attributes:
-      label: Open Source Project type
-      options:
-        - Foundation led
-        - Community led
-        - Others
-    validations:
-      required: true
+    required: true
 
-  - type: input
-    id: repo
+- type: textarea
+    id: repo_description
     attributes:
-      label: Repo URL
-      placeholder: Enter the project repo url
+    label: "Repo Description"
+    description: "Provide a brief description of the repository."
+    placeholder: "(Example: Empowering everyone to build reliable and efficient software.)"
     validations:
-      required: true
-    
-  - type: input
-    id: sub_project
+    required: true
+
+- type: input
+    id: git_url
     attributes:
-      label: Sub-project repo URL
-      description: Enter the url to the repository of the sub-project, if any.
-      placeholder: Enter the url here
+    label: "Git URL"
+    description: "Git URL for the repo 🌎"
+    placeholder: "Example: git://github.com/rust-lang/rust.git"
     validations:
-      required: false
+    required: true
 
-  - type: input
-    id: site
+- type: input
+    id: repo_license
     attributes:
-      label: Webpage
-      placeholder: Enter the url to the projects webpage.
+    label: "License"
+    description: "License info of the repository 📄"
+    placeholder: "Example: Apache, MIT"
     validations:
-      required: false
+    required: true
 
-  
-
-  - type: dropdown
-    id: license
+- type: input
+    id: url
     attributes:
-      label: License
-      description: Select the type of license
-      options:
-        - Apache-2.0
-        - BSD-3-Clause
-        - BSD-2-Clause
-        - GPL
-        - GPL-2.0
-        - GPL-3.0
-        - LGPL
-        - LGPL-2.1
-        - LGPL-3.0
-        - MIT
-        - MPL-2.0
-        - CDDL-1.0
-        - EPL-2.0
-        - others
+    label: "URL"
+    description: "URL of the tool's website or the Git repository 🤗"
+    placeholder: "Example: https://github.com/rust-lang/rust"
     validations:
-      required: true
+    required: true
 
-  - type: input
-    id: license_others
+- type: dropdown
+    id: use_case
     attributes:
-      label: Other license
-      description: If the license of the project is not displayed in the above list, please mention it below.
+    label: "Use Case"
+    description: "Select the primary use case for the repo 🪄"
+    options:
+        - "AI/ML"
+        - "System Programming"
+        - "Crypto/Decentralization"
+        - "Gaming/Entertainment"
+        - "Others"
     validations:
-      required: false
-
-  - type: textarea
-    attributes:
-      label: Reason , why we must track this project.
-      placeholder: |
-        Talk about its
-        1. business relevance 
-        2. impact in the current market
-        3. merits over similar projects etc.
+    required: true
