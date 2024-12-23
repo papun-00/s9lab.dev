@@ -43,9 +43,15 @@
 
                                     {% set image = resize_image(path="img/brand/s9lab-logo-new.png", width=w, height=h, op="fit_width") %}
 
-                                    <img src="{{ image.url }}" srcset="/{{"img/brand/s9lab-logo-new.png"}} 2x" class="w-15 h-15"/>
+                                    <img src="{{ image.url }}" srcset="/{{"img/brand/s9lab-logo-new.png"}} 2x" class="w-16 h-18"/>
 
                                 </a>
+
+                                {% for item in config.extra.website_header_menu %}
+                                <div class=" list-none px-5 flex flex-wrap justify-center hover:text-blue-600 text-fuchsia-800 font-light rounded-lg lg:justify-end space-x-2 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0 py-9 font-mono">
+                                    <a href="{{ item.url }}">{{ item.menu }}</a>
+                                </div>
+                                {% endfor %}
                             </ul>
                         </a>
                     </ul>
@@ -53,13 +59,13 @@
             </div>
 
             <!-- Menu that wraps below the name on smaller screens -->
-            <div class="list-none px-5 mx-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+            <!-- <div class="list-none px-5 mx-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
                 {% for item in config.extra.website_header_menu %}
-                <li class=" hover:text-violet-900 text-fuchsia-800 font-light rounded-lg p-3 font-mono">
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-light rounded-lg py-3 font-mono">
                     <a href="{{ item.url }}">{{ item.menu }}</a>
                 </li>
                 {% endfor %}
-            </div>
+            </div> -->
         </div>
 
     </header>
