@@ -3,7 +3,7 @@
 {% block body %}
 
 <div class="from-cyan-500 via-indigo-600 to-rose-400">
-    <div class="container mx-auto flex flex-wrap justify-between items-center py-6">
+    <div class="container mx-auto flex flex-wrap justify-between items-center py-10">
         <!-- Left side text -->
         <p class="text-fuchsia-600 lg:text-6xl text-2xl md:text-3xl py-6 px-5">
             <span class="lg:text-6xl text-20xl font-light text-purple-900">Tech </span> <span class="lg:text-6xl text-20xl font-light text-fuchsia-600"> is not 🚀 Science.</span><br>
@@ -35,14 +35,12 @@
     </div>
     </div>
 </div>
+<div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
 
-<div class="ml-10 px-10">
-    <p class="text-2lg md:text-3xl lg:text-4xl font-thin container py-5 mx-auto rounded-lg px-15 text-fuchsia-900">
-        App Galaxy ☄️
-    </p>
-    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
-</div>
-
+    <div class="text-2lg md:text-3xl lg:text-4xl font-thin py-5 mx-10 px-10 text-fuchsia-900">
+        App Galaxy
+    </div>
+<div class="container w-full h-5 backdrop-blur-lg shadow-lg bg-opacity-10"></div>
 <div class="container p-4 mx-auto">
     <div class="font-thincontainer flex flex-wrap justify-center">
         {% set data = load_data(path="apps.json", format="json") %}

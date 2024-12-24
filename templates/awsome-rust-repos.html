@@ -3,15 +3,19 @@
 {% set data = load_data(path="content/awsome-rust-repos/awsome-rust-repos-list.json", format="json") %}
 {% set sorted_data = data | sort(attribute="forks_count", reverse=true) %}
 
-<div class="py-2 px-5">
-    <p class="text-4xl md:text-5xl font-light py-3 px">
-        <span class="text-fuchsia-900">A</span>wsome Trending Rust ⚙️ Repos
-    </p>
-    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
-</div>
+<div class="py-5 my-5">
 
-<div class="py-1 px-10">
-    <p class="text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-wrap text-centre max-w-auto px-10 mx-10 text-center">
+</div>
+<div class="px-5">
+    <p class="text-4xl md:text-5xl font-light py-6 flex text-indigo-700">
+        <span class="text-fuchsia-900">A</span>wsome Trending Rust ⚙️ Repos
+        <div class="justify-center px-10 w-1/6 h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg">
+        </div>
+    </p>
+    
+
+<div class="py-3 px-10">
+    <p class="justify-center text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-wrap text-centre max-w-auto px-10 mx-10 text-center">
         🚀 Showcase top Rust ⚙️ repos, sorted by forks and Stars! Updated Twice
     </p>
     <p class="py-1 text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-center mx-auto max-w-auto px-10">
@@ -20,17 +24,20 @@
 </div>
 
 <div class="py-2 px-5">
-    <p class="text-3xl md:text-4xl font-light py-3">
-        <span class="text-fuchsia-900">R</span>epo of the Day 😇
-    </p>
-    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
+    
 </div>
 
-<div class="container mx-5 px-2 flex flex-wrap justify-center gap-5">
+<div class="container mx-5 px-2 flex flex-wrap justify-evenly gap-5">
+    
     {% for item in data %}
     {% if item.name in config.extra.repo_of_the_day %}
     <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div class="bg-gradient-to-r from-cyan-50 via-indigo-50 to-rose-50 bg-opacity-50 rounded-lg shadow-lg overflow-hidden h-auto">
+        <p class="px-10 text-3xl md:text-4xl font-light py-4 justify-center">
+            <span class="text-fuchsia-900">R</span>epo of the Day 😇
+            <div class=" px-10 my-1 w-1/6 h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg">
+            </div>
+        </p>
+        <div class="py-1 bg-gradient-to-r from-cyan-50 via-indigo-50 to-rose-50 bg-opacity-50 rounded-lg shadow-lg overflow-hidden h-auto">
             <div class="p-5">
                 <div class="flex items-center space-x-4">
                     <img src="{{ item.gitHubAvtarURL }}" alt="{{ item.name }} Avatar" class="w-12 h-12 rounded-full">
@@ -69,6 +76,7 @@
 <div class="px-5">
     <p class="text-3xl md:text-4xl font-thin py-3">
         <span class="text-fuchsia-900">T</span>rending Rust ⚙️ Repos
+        <div class="justify-center px-10 my-1 w-1/6 h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg">
     </p>
     <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-2 rounded-lg"></div>
 </div>

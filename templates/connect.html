@@ -3,14 +3,16 @@
 
 {% block body %}
 
-<section class="py-5 px-5">
-    <p class="text-3xl text-fuchsia-900 font-extrabold py-3"><span class="text-5xl font-extrabold text-fuchsia-900">L</span>et's Connect... ☕️  </p>
-    <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1"></div>
+<section class="py-10 px-5">
+    <p class="text-3xl text-center text-fuchsia-900 font-light py-3"><span class="text-5xl font-light text-fuchsia-900">L</span>et's Connect... ☕️
+        <div class="w-full h-1 bg-gradient-to-r from-cyan-500 via-indigo-600 to-rose-400 my-1"></div>
+    </p>
+    
 
     <div class="py-10 flex flex-wrap justify-evenly">
         <ul class=" px-5 list-none flex justify-evenly space-x-6 py-10 px-auto mx-auto rounded-xl">
             {% for item in config.extra.social_handle %}
-            <li class="bg-opacity-10 font-bold backdrop-blur-lg shadow-lg overflow-hidden hover:bg-purple-100  text-lg text-purple hover:text-black p-2 rounded-2xl">
+            <li class="bg-opacity-10 font-light backdrop-blur-lg shadow-lg overflow-hidden hover:bg-purple-100 bg-blue-300 text-rose-800 text-lg text-purple p-2 rounded-2xl">
                 <a href="{{ item.url }}"> {{ item.social_handle}}
                 </a>
             </li>
