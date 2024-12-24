@@ -8,6 +8,8 @@
     },
     { "name": "Modern AI/ML Infrastructure",
     "description": "The Collection of the infrasttructure for all your AI/ML need, From Server-less, to On-VM till Kubernetes","url": "https://s9lab.dev/modern-ai-ml-infra/"
+    },
+    { "name": "Epic Julia 🧪 Repos",
+    "description": "A fast and efficient alternative to Python, Julia offers a curated collection of repositories to supercharge your AI and ML tasks.","url": "https://s9lab.dev/awsome-julia-repos/"
     }
-    
 ]
