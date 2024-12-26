@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block body %}
+{% set data = load_data(path="content/oss-vectordb-repos/oss-vectordb-repos.json", format="json") %}
+{% set sorted_data = data | sort(attribute="forks_count", reverse=true) %}
+
+<div class="py-5 my-5">
+
+</div>
+    <div class="px-5 py-5">
+            <div class="flex items-center space-x-4 text-xl md:text-2xl lg:text-3xl py-2 font-light">
+                <a class="flex text-indigo-700">
+                    <span class="text-fuchsia-900"></span>The OpenSource
+                </a>
+                <a class=" flex text-indigo-700">
+                    <span class="text-fuchsia-900"></span> Vector Data Bases
+                </a>
+            </div>
+    <div class="justify-center px-10 w-1/6 h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg">
+</div>
+</div>
+<div class="py-5">
+    <p class="justify-center text-lg md:text-xl lg:text-2xl text-indigo-700 font-light text-wrap text-justify max-w-auto px-5 mx-5">
+        <span class="text-fuchsia-800 font-semibold">Vector DB(s)</span> Empowers you AI ML App Development. Check Out the OpenSource Collection of <span class="text-fuchsia-800 font-semibold">Vector DBs</span> here 📍
+    </p>
+</div>
+
+<div class="py-2 px-5">
+    
+</div>
+
+<div class="container mx-auto px-5 flex flex-wrap justify-evenly">
+    {% for item in data %}
+
+    <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-gradient-to-r from-cyan-50 via-indigo-50 to-rose-50 bg-opacity-50 rounded-lg shadow-lg overflow-hidden h-auto">
+            <div class="p-5">
+                <div class="flex items-center space-x-4">
+                    <img src="{{ item.gitHubAvtarURL }}" alt="{{ item.name }} Avatar" class="w-12 h-12 rounded-full">
+                    <a href="{{ item.git_url }}" class="text-lg font-thin text-slate-900 underline hover:text-fuchsia-700">
+                        {{ item.name }}
+                    </a>
+                </div>
+                <p class="mt-4 text-slate-900 text-sm overflow-hidden max-h-[75px] overflow-y-scroll scrollbar-thin">
+                    {{ item.repo_description }}
+                </p>
+                <div class="my-3 w-full h-1 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 rounded-lg"></div>
+
+                <div class="text-sm">
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Written in:</span> <span class="text-red-800">{{ item.highest_lang }} {{ item.highest_lang_percentage }}</span> %</p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">🌟</span> <span class="text-rose-500">{{ item.github_stars }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Last Updated on:</span> <span class="text-red-800">{{ item.lastUpdated }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Forked:</span> <span class="text-red-800">{{ item.forks_count }} Times</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">Open Issues:</span> <span class="text-red-800">{{ item.open_issues }}</span></p>
+                </div>
+                <div class="container text-sm flex flex-wrap space-x-5 justify-between bg-gradient-to-r from-cyan-100 via-indigo-100 to-rose-100 backdrop-blur-sm bg-opacity-50 px-2 border-2 border-x-indigo-500 rounded-2xl">
+                    <p class="space-x-1"><span class="font-thin text-violet-900">License:</span> <span class="text-pink-600">{{ item.repo_license }}</span></p>
+                    <p class="space-x-1"><span class="font-thin text-violet-900">SPDX ID:</span> <span class="text-pink-600">{{ item.repo_spdx_id }}</span></p>
+                </div>
+
+                <a href="{{ item.url }}" class="flex items-center text-fuchsia-900 font-semibold mt-4 space-x-2 hover:underline">
+                    <img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="GitHub Octocat Logo" class="w-6 h-6">
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
