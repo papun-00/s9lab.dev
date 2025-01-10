@@ -81,4 +81,4 @@ collab = [
 ]
 repo_of_the_day = ["firecracker"]
 repo_of_rust_ai_ml_of_the_day = ["zola"]
-julia_repo_of_the_day = ["Plot.jl"]
+julia_repo_of_the_day = ["Plots.jl"]
