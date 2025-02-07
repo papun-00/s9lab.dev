@@ -15,8 +15,8 @@ minify_html = false
 
 taxonomies = [
     { name = "tags", feed = true, paginate_by = 5 },
-    {name = "app_url", feed = true, paginate_by=5},
-    ]
+    { name = "app_url", feed = true, paginate_by = 5 },
+]
 
 build_search_index = true
 
@@ -74,11 +74,11 @@ company_logo = [{ url = "img/brand/s9lab-logo-new.png" }]
 brand_logo = [{ brand_logo_path = "img/brand/ss9lab-logo-new.png" }]
 
 collab = [
-    { url = "https://github.com/s9lab-dev/sharang", name = "Sharang App", Techstack= "Julia, PlotlyDash" },
-    { url = "https://asteria.co.in/skydeck", name = "Skydeck", Techstack= "Go, Python, TailwindCSS" },
-    { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
-    { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
+    { url = "https://github.com/s9lab-dev/sharang", name = "Sharang App", Techstack = "Julia, PlotlyDash" },
+    { url = "https://asteria.co.in/skydeck", name = "Skydeck", Techstack = "Go, Python, TailwindCSS" },
+    { url = "https://capita7.com/", name = "Capita7", Techstack = "Rust, Cargo TailwinCss" },
+    { url = "https://github.com/s9lab-dev/fuse", name = "Fuse-cli", Techstack = "Rust, Cargo" },
 ]
-repo_of_the_day = ["nushell"]
+repo_of_the_day = ["starship"]
 repo_of_rust_ai_ml_of_the_day = ["zola"]
-julia_repo_of_the_day = ["Zygote.jl"]
+julia_repo_of_the_day = ["JuMP.jl"]

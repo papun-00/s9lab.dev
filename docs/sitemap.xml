@@ -25,6 +25,13 @@
         <loc>https://s9lab.dev/connect/</loc>
     </url>
     <url>
+        <loc>https://s9lab.dev/docu/</loc>
+    </url>
+    <url>
+        <loc>https://s9lab.dev/documentation/bonv/</loc>
+        <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
         <loc>https://s9lab.dev/exclusive-ai-ml-rust-repos/</loc>
     </url>
     <url>
@@ -38,5 +45,17 @@
     </url>
     <url>
         <loc>https://s9lab.dev/tags/</loc>
+    </url>
+    <url>
+        <loc>https://s9lab.dev/tags/bonv/</loc>
+    </url>
+    <url>
+        <loc>https://s9lab.dev/tags/bonv/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://s9lab.dev/tags/doc/</loc>
+    </url>
+    <url>
+        <loc>https://s9lab.dev/tags/doc/page/1/</loc>
     </url>
 </urlset>

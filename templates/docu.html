@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        {{page.title}}
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">{{ config.author }}</a>
+        </p>
+        </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">{{ page.word_count }}</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">{{ page.reading_time }} minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        {{ page.content | safe }}
+
+        </article>
+
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            {% if page.taxonomies.tags %}
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              {% for tag in page.taxonomies.tags %}
+              <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="text-sky-700 flex hover:underline mx-2">
+                #{{ tag }}
+              </a>
+              {% endfor %}
+            </p>
+          </div>
+          {% endif %}
+
+
+    </div>
+
+{% endblock %}
