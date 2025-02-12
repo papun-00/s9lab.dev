@@ -28,11 +28,25 @@
         "github_stars": 54388
     },
     {
+        "name": "image-hub",
+        "repo_description": "Image Hub is a sample application for exploring WebAssembly modules used as Envoy filters",
+        "url": "https://github.com/layer5io/image-hub",
+        "rustLangPercentage": 33.7,
+        "lastUpdated": "14-nov-2024",
+        "gitHubAvtarURL": "https://avatars.githubusercontent.com/u/44620851?v=4",
+        "forks_count": 23,
+        "open_issues": 16,
+        "git_url": "git://github.com/rust-lang/rustlings.git",
+        "repo_license": "Apache License 2.0",
+        "repo_spdx_id": "Apache-2.0",
+        "github_stars": 67
+    },
+    {
         "name": "Pake",
         "repo_description": "\ud83e\udd31\ud83c\udffb Turn any webpage into a desktop app with Rust.  \ud83e\udd31\ud83c\udffb \u5229\u7528 Rust \u8f7b\u677e\u6784\u5efa\u8f7b\u91cf\u7ea7\u591a\u7aef\u684c\u9762\u5e94\u7528",
         "url": "https://github.com/tw93/Pake",
         "rustLangPercentage": 87.2,
-        "lastUpdated": "14-sep-2024",
+        "lastUpdated": "31-May-2024",
         "gitHubAvtarURL": "https://avatars.githubusercontent.com/u/8736212?v=4",
         "forks_count": 5756,
         "open_issues": 35,
