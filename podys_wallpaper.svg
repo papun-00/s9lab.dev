@@ -1,0 +1,137 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Minimal gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Blue square gradient -->
+    <linearGradient id="blueSquare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Logo text color -->
+    <linearGradient id="logoText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Tagline text color -->
+    <linearGradient id="taglineText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle shadow filter -->
+    <filter id="subtleShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+  </defs>
+  
+  <!-- Minimal background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Logo container centered -->
+  <g transform="translate(960, 480)">
+    <!-- Blue square -->
+    <rect 
+      x="-140" 
+      y="-30" 
+      width="50" 
+      height="50" 
+      rx="6" 
+      ry="6" 
+      fill="url(#blueSquare)"
+      filter="url(#subtleShadow)"/>
+    
+    <!-- Logo text "podXS" -->
+    <text 
+      x="-70" 
+      y="8" 
+      font-family="'IBM Plex Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace" 
+      font-size="84" 
+      font-weight="500" 
+      text-anchor="start" 
+      dominant-baseline="middle" 
+      fill="url(#logoText)"
+      letter-spacing="0.02em">
+      podXS
+    </text>
+  </g>
+  
+  <!-- Tagline -->
+  <text 
+    x="50%" 
+    y="580" 
+    font-family="'IBM Plex Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace" 
+    font-size="14" 
+    font-weight="300" 
+    text-anchor="middle" 
+    dominant-baseline="middle" 
+    fill="url(#taglineText)"
+    letter-spacing="0.05em"
+    opacity="0.8">
+    Brought to you by iserveU
+  </text>
+  
+  <!-- Responsive styles -->
+  <style>
+    @media screen and (max-width: 1200px) {
+      g text {
+        font-size: 72px;
+      }
+      svg text:last-of-type {
+        font-size: 13px;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      g {
+        transform: translate(384, 320);
+      }
+      g text {
+        font-size: 58px;
+        x: -60px;
+      }
+      g rect {
+        width: 45px;
+        height: 45px;
+        x: -120px;
+        y: -28px;
+      }
+      svg text:last-of-type {
+        font-size: 12px;
+        y: 400;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      g {
+        transform: translate(240, 280);
+      }
+      g text {
+        font-size: 42px;
+        x: -50px;
+      }
+      g rect {
+        width: 36px;
+        height: 36px;
+        x: -95px;
+        y: -22px;
+      }
+      svg text:last-of-type {
+        font-size: 10px;
+        y: 360;
+      }
+    }
+    
+    /* Ensure proper scaling */
+    svg {
+      width: 100%;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</svg>
